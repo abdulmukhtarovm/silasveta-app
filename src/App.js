@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import About from './components/About'
+import Header from './components/Header'
+import Portfolio from './components/Portfolio'
+import Tovar1 from './components/Tovar1'
+import Tovar2 from './components/Tovar2'
+import Tovar3 from './components/Tovar3'
+import Tovar4 from './components/Tovar4'
+import Tovar5 from './components/Tovar5'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Header/>
+      <About/>
+      <Portfolio/>
+      <Tovar1/>
+      <Tovar2/>
+      <Tovar3/>
+      <Tovar4/>
+      <Tovar5/>
+
+    </>
+  )
 }
 
-export default App;
+export default App
